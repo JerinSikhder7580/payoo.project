@@ -22,11 +22,17 @@ document.getElementById('add-money-btn').addEventListener('click', function () {
 
     if (pin === '1234') {
         balanceElement.innerText = newBalance
-    }
+        const history = document.getElementById('history-container')
 
-    else{
+        history.innerHTML = `<p>Added ${amount} From ${accountNum}</P>`
+
+    }
+    else {
         alert('Invalid pin')
     }
+
+
+
 
 })
 
